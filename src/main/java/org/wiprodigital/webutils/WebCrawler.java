@@ -27,6 +27,7 @@ public class WebCrawler {
         crawledPages.add(mainDomain);
 
         while (!pagesForCrawling.isEmpty()) {
+		//change to master
             String domainPage = pagesForCrawling.poll();
             logger.info("[BEGIN CRAWLING WEBSITE] ["+ domainPage + "]");
 
