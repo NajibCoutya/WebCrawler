@@ -26,6 +26,7 @@ public class WebCrawler {
         HashSet<String> crawledPages = new HashSet<>();
         crawledPages.add(mainDomain);
 
+        //loop all pages for Crawling
         while (!pagesForCrawling.isEmpty()) {
             String domainPage = pagesForCrawling.poll();
             logger.info("[BEGIN CRAWLING WEBSITE] ["+ domainPage + "]");
