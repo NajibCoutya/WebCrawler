@@ -17,6 +17,8 @@ public class DomainParser implements IDomainParser {
         Document document = null;
         Elements subdomainPages = new Elements();
         try {
+            //we should use local interface to use external
+            //libraries cleanly
             document = Jsoup.connect(urlString).get();
             for(String elementType : elementTypes) {
                 subdomainPages.addAll(document.select(elementType));
